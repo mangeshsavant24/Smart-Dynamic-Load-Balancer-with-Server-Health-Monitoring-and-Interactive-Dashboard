@@ -1,0 +1,24 @@
+Apache Benchmark (ab) usage examples
+
+Prerequisites:
+- Install ApacheBench (ab) on Windows, or run from WSL/Linux.
+
+Basic example against the load balancer compute endpoint:
+
+    ab -n 200 -c 20 http://127.0.0.1:8000/api/compute?n=30
+
+Explanation:
+- -n 200  => total 200 requests
+- -c 20   => 20 concurrent clients
+
+POST example against the echo endpoint:
+
+    ab -n 200 -c 20 -p echo_payload.json -T application/json http://127.0.0.1:8000/api/echo
+
+Where echo_payload.json contains:
+
+    {"message": "hello from ab"}
+
+Run the load balancer separately with different algorithms (round_robin, least_connections, cpu_based)
+and repeat the ab commands to collect comparative performance results.
+
