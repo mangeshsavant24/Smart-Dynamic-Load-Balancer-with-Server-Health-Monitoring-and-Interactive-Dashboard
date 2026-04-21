@@ -1,0 +1,24 @@
+[
+  {
+    "path": "/api/compute",
+    "method": "GET",
+    "params": {
+      "n": 30
+    }
+  },
+  {
+    "path": "/api/compute",
+    "method": "GET",
+    "params": {
+      "n": 32
+    }
+  },
+  {
+    "path": "/api/echo",
+    "method": "POST",
+    "json": {
+      "message": "Hello from sample dataset"
+    }
+  }
+]
+

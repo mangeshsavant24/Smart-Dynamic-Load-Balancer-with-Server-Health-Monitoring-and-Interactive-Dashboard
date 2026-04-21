@@ -80,7 +80,7 @@ Use the built-in traffic generator:
 
 ```bash
 cd C:\Users\mitsa\OneDrive\Desktop\CN_cp
-python src\simulation\traffic_generator.py --concurrency 20 --requests 200 --algorithm round_robin
+python src\simulation\traffic_generator.py --concurrency 20 --requests 200
 ```
 
 Or see `src\simulation\ab_instructions.txt` for using Apache Benchmark.

@@ -4,7 +4,7 @@ import datetime as dt
 
 from sqlalchemy import Column, DateTime, Float, Integer, String
 
-from .db import Base
+from src.monitoring.db import Base
 
 
 class Server(Base):

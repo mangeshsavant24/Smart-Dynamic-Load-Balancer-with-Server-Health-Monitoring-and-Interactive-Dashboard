@@ -1,0 +1,11 @@
+flask
+requests
+psutil
+streamlit
+plotly
+sqlalchemy
+alembic
+uvicorn
+fastapi
+
+

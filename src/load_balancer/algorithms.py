@@ -6,7 +6,7 @@ from typing import Dict, List, Optional
 
 import requests
 
-from .config import BACKENDS, BackendServer
+from src.load_balancer.config import BACKENDS, BackendServer
 
 
 @dataclass

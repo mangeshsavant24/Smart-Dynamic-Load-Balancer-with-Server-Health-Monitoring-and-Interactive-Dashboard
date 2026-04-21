@@ -24,9 +24,9 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from .algorithms import LoadBalancingAlgorithms
-from .config import BACKENDS, DEFAULT_ALGORITHM, LOAD_BALANCER_HOST, LOAD_BALANCER_PORT
-from .logger import get_logger
+from src.load_balancer.algorithms import LoadBalancingAlgorithms
+from src.load_balancer.config import BACKENDS, DEFAULT_ALGORITHM, LOAD_BALANCER_HOST, LOAD_BALANCER_PORT
+from src.load_balancer.logger import get_logger
 from src.monitoring.metrics_collector import log_local_cpu_memory, log_request
 
 

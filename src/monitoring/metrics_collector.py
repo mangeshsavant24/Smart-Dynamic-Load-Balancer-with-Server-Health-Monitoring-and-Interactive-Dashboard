@@ -5,8 +5,8 @@ from typing import Optional
 
 import psutil
 
-from .db import SessionLocal, init_db
-from .models import HealthLog, RequestLog
+from src.monitoring.db import SessionLocal, init_db
+from src.monitoring.models import HealthLog, RequestLog
 
 
 def log_request(

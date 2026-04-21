@@ -2,7 +2,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-from .config import LOG_DIR
+from src.load_balancer.config import LOG_DIR
 
 
 def get_logger(name: str = "load_balancer") -> logging.Logger:
